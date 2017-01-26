@@ -1,0 +1,338 @@
+/**************************
+Variables
+**************************/
+/**************************
+Base Styles
+**************************/
+html, body {
+  height: 100%;
+  width: 100%; }
+
+* {
+  outline: none; }
+
+body {
+  background: white;
+  color: black; }
+
+body, h1, h2, h3, h4, h5, h6, h7, p, a, li, button, input {
+  font-family: 'Lato', sans-serif; }
+
+textarea {
+  resize: none; }
+
+li {
+  list-style: none;
+  color: #008066; }
+
+th {
+  background: #3c3c3c;
+  color: #008066; }
+
+.pos-relative {
+  position: relative; }
+
+.active {
+  color: #008066; }
+
+.callout {
+  margin-top: -16px; }
+
+.rmv-post {
+  position: absolute;
+  right: 0; }
+
+.post-body {
+  padding-left: 15px; }
+
+#landing {
+  background-image: url("../img/montage.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#location {
+  display: none; }
+
+input[type="radio"] {
+  margin: 0 2px 20px; }
+
+.error {
+  background: crimson;
+  color: white;
+  padding: 5px; }
+
+.menu .myBtn {
+  background: transparent;
+  border-bottom: 2px solid white;
+  margin: 0 1rem;
+  padding: .65em; }
+  .menu .myBtn:hover {
+    color: #008066 !important;
+    border-bottom: 2px solid #008066; }
+
+.right-menu {
+  margin-top: 20px; }
+
+.title-bar {
+  background: transparent;
+  position: absolute;
+  right: 0; }
+
+.top-bar {
+  background: rgba(10, 10, 10, 0.9); }
+
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
+  float: left; }
+
+.top-bar ul {
+  background: transparent; }
+
+.top-bar-left, .top-bar-right {
+  text-align: center; }
+
+.logo {
+  width: 180px;
+  height: 60px;
+  margin-left: 15px; }
+
+.menu a {
+  text-transform: uppercase;
+  color: #CCCCCC; }
+  .menu a .top-bar-icon:before {
+    color: #008066;
+    float: left; }
+
+.search-bar {
+  margin: 0 auto !important;
+  color: white;
+  background: #3c3c3c;
+  border: 1px solid #3c3c3c;
+  width: 100% !important; }
+  .search-bar:focus {
+    border: none;
+    background: #3c3c3c; }
+
+.reveal {
+  color: black; }
+
+.thumb {
+  width: 65px;
+  height: 65px; }
+
+.thumb-med {
+  width: 135px;
+  height: 135px; }
+
+.content-margin {
+  margin-top: 20px; }
+
+.loveForm {
+  clear: both; }
+
+.icon-heart {
+  background: url("../img/loveit.png") no-repeat 0 0;
+  border: 0;
+  width: 19px; }
+
+.has-error {
+  border: 1px solid red; }
+
+.submenu {
+  top: 100%;
+  left: 0;
+  border: none; }
+
+.is-submenu-item {
+  border-bottom: 1px solid black;
+  background: #008066; }
+  .is-submenu-item:hover {
+    background: #CCCCCC; }
+  .is-submenu-item:last-child {
+    border-bottom: none; }
+  .is-submenu-item a {
+    color: white;
+    padding: 12px !important; }
+    .is-submenu-item a:hover {
+      color: #008066; }
+
+.dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {
+  border: 8px inset;
+  border-color: #00e6b7 transparent transparent; }
+
+li[role="menuitem"] a p {
+  margin-bottom: 0; }
+
+/**************************
+Docket Section
+**************************/
+.docket-top {
+  margin-top: 10px; }
+
+.postArea {
+  background: #3c3c3c;
+  color: white; }
+  .postArea:focus {
+    background: #3c3c3c; }
+
+.albumMontage {
+  height: 405px;
+  padding: 0;
+  border: 3px solid #CCCCCC;
+  border-top: 6px solid #CCCCCC;
+  border-left: 6px solid #CCCCCC; }
+  .albumMontage:nth-child(2), .albumMontage:nth-child(4) {
+    border-left: 3px solid #CCCCCC;
+    border-right: 6px solid #CCCCCC; }
+  .albumMontage:nth-child(3), .albumMontage:nth-child(4) {
+    border-top: 3px solid #CCCCCC;
+    border-bottom: 6px solid #CCCCCC; }
+  .albumMontage:nth-child(4) {
+    margin-bottom: 16px; }
+
+/**************************
+Profile Section
+**************************/
+.profileHead {
+  color: #3c3c3c;
+  border-bottom: 3px inset #3c3c3c;
+  padding: 15px;
+  text-align: center; }
+
+.profile-pic, .friend-pic {
+  width: 150px;
+  height: 150px;
+  max-width: 150px;
+  max-height: 150px; }
+
+.tabs {
+  border-top: none; }
+
+.tabs-title a {
+  color: #008066;
+  font-size: 1em;
+  font-weight: 700; }
+
+.tabs-title > a[aria-selected=true] {
+  background: #3c3c3c; }
+
+.tabs-content {
+  margin-bottom: 25px; }
+
+.postsDiv {
+  padding: 0 50px; }
+
+/**************************
+Messages Section
+**************************/
+.msg-contact, .msg-content {
+  max-height: 700px;
+  overflow: auto; }
+
+.msg-contacts {
+  border-top: 1px solid #e6e6e6; }
+
+.msg-content {
+  border-left: 1px solid #e6e6e6 !important; }
+
+.msg-card {
+  position: relative; }
+  .msg-card .sent-date {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .msg-card .msgs-pic {
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    max-height: 50px; }
+
+/**************************
+Friends Section
+**************************/
+.fr-field {
+  max-height: 400px; }
+
+/**************************
+Icomoon Fonts
+**************************/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?7krm32");
+  src: url("../fonts/icomoon.eot?7krm32#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?7krm32") format("truetype"), url("../fonts/icomoon.woff?7krm32") format("woff"), url("../fonts/icomoon.svg?7krm32#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-home:before {
+  content: "\e900"; }
+
+.icon-pencil:before {
+  content: "\e901"; }
+
+.icon-profile:before {
+  content: "\e902"; }
+
+.icon-folder-plus:before {
+  content: "\e909"; }
+
+.icon-envelop:before {
+  content: "\e903"; }
+
+.icon-users:before {
+  content: "\e905"; }
+
+.icon-user-plus:before {
+  content: "\e906"; }
+
+.icon-user-minus:before {
+  content: "\e907"; }
+
+.icon-search:before {
+  content: "\e908"; }
+
+.icon-cog:before {
+  content: "\e904"; }
+
+/**************************
+Media Queries
+**************************/
+@media screen and (min-width: 640px) {
+  .topBarBtn {
+    top: -50%;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%); }
+  .menu a {
+    display: inline-block; }
+    .menu a .top-bar-icon {
+      display: inline-block; } }
+
+@media screen and (min-width: 1024px) {
+  .docket-top form .column:first-child {
+    text-align: right; }
+    .docket-top form .column:first-child p {
+      bottom: initial;
+      margin: initial;
+      left: initial;
+      right: 0;
+      max-width: 65%;
+      padding-right: 15px; }
+  .profileHead {
+    text-align: initial; } }
+
+@media screen and (min-width: 1323px) {
+  .profileHead {
+    margin-top: 20px; } }
+
+/*# sourceMappingURL=app.css.map */
